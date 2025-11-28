@@ -1,0 +1,7 @@
+$(SML_LIB)/basis/basis.mlb
+
+src/lib/Types.sml
+
+src/sol/Day01.sml
+
+src/Aoc.sml
