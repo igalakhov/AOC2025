@@ -1,9 +1,16 @@
 val solutions: DaySolution list = [Day01.solution]
 
+fun runSolution sol lines =
+  ( print ("Part 1: " ^ ((#solve1 sol) lines) ^ "\n")
+  ; print ("Part 2: " ^ ((#solve2 sol) lines) ^ "\n")
+  )
 
 fun main () =
   case CommandLine.arguments () of
-    "run" :: _ => raise Fail "Not implemented"
+    ["run", id, inp] =>
+      (case List.find (fn sol => (#id sol) = id) solutions of
+         NONE => print ("Problem " ^ id ^ " not found\n")
+       | SOME sol => runSolution sol (Util.readLines inp))
   | ["list"] =>
       let val ids = List.map #id solutions
       in print (String.concatWith "\n" ids ^ "\n")

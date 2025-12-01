@@ -1,5 +1,6 @@
 $(SML_LIB)/basis/basis.mlb
 
+src/lib/Util.sml
 src/lib/Types.sml
 
 src/sol/Day01.sml

@@ -1,14 +1,17 @@
+exception ParseError
+
 signature DAY_IMPL =
 sig
-  type t
+  val day: int
+
+  type state
   type result1
   type result2
 
-  val id: string
-  val parse: string list -> t
+  val parse: string list -> state
 
-  val solve1: t -> result1
-  val solve2: t -> result2
+  val solve1: state -> result1
+  val solve2: state -> result2
 
   val display1: result1 -> string
   val display2: result2 -> string
@@ -27,7 +30,7 @@ struct
   open Impl
 
   val solution =
-    { id = id
+    { id = Int.toString day
     , solve1 = fn input => display1 (solve1 (parse input))
     , solve2 = fn input => display2 (solve2 (parse input))
     }
