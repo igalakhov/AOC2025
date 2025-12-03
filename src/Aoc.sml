@@ -1,4 +1,4 @@
-val solutions: DaySolution list = [Day01.solution]
+val solutions: DaySolution list = [Day01.solution, Day02.solution]
 
 fun runSolution sol lines =
   ( print ("Part 1: " ^ ((#solve1 sol) lines) ^ "\n")

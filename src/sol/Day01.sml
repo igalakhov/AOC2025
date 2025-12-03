@@ -39,17 +39,13 @@ struct
 
   val solve1 = (Util.count (fn x => x = 0)) o (getVals)
 
-  val solve2 = 
-    solve1 o 
-    List.concat o
-    (
-      List.map 
-      (
-        fn move => case move of 
-          L amt => List.tabulate (amt, (fn _ => L 1))
-        | R amt => List.tabulate (amt, (fn _ => R 1))
-      )
-    )
+  val solve2 =
+    solve1 o List.concat
+    o
+    (List.map (fn move =>
+       case move of
+         L amt => List.tabulate (amt, (fn _ => L 1))
+       | R amt => List.tabulate (amt, (fn _ => R 1))))
 
   val display1 = Int.toString
   val display2 = Int.toString

@@ -4,5 +4,6 @@ src/lib/Util.sml
 src/lib/Types.sml
 
 src/sol/Day01.sml
+src/sol/Day02.sml
 
 src/Aoc.sml
