@@ -6,5 +6,6 @@ src/lib/Types.sml
 src/sol/Day01.sml
 src/sol/Day02.sml
 src/sol/Day03.sml
+src/sol/Day04.sml
 
 src/Aoc.sml
