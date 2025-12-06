@@ -1,5 +1,10 @@
 val solutions: DaySolution list =
-  [Day01.solution, Day02.solution, Day03.solution, Day04.solution]
+  [ Day01.solution
+  , Day02.solution
+  , Day03.solution
+  , Day04.solution
+  , Day05.solution
+  ]
 
 fun runSolution sol lines =
   ( print ("Part 1: " ^ ((#solve1 sol) lines) ^ "\n")
