@@ -10,5 +10,6 @@ src/sol/Day04.sml
 src/sol/Day05.sml
 src/sol/Day06.sml
 src/sol/Day07.sml
+src/sol/Day08.sml
 
 src/Aoc.sml

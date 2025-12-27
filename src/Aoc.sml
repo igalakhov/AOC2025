@@ -6,6 +6,7 @@ val solutions: DaySolution list =
   , Day05.solution
   , Day06.solution
   , Day07.solution
+  , Day08.solution
   ]
 
 fun runSolution sol lines =
